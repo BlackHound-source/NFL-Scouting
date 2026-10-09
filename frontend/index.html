@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>D2-TF FIFA Scout Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>D2-TF Scout Hub</h1>
+    <p>Dual-Duels Translation Framework · FIFA Ultimate Team Player Cards</p>
+  </header>
+  
+  <div class="banner" id="banner">Loading telemetry models...</div>
+  
+  <div class="wrap">
+    <!-- Sidebar Controls -->
+    <div class="sidebar panel">
+      <h3>Filters</h3>
+      <div class="filter-group">
+        <label><b>Position Group</b></label>
+        <div id="posf"></div>
+      </div>
+      <div class="filter-group">
+        <label><b>Min Score</b></label>
+        <input id="minscore" type="number" step="0.01" placeholder="0.00">
+      </div>
+      <div class="filter-group">
+        <label><b>Search Player</b></label>
+        <input id="q" type="text" placeholder="Player name...">
+      </div>
+    </div>
+
+    <!-- Main Card Display -->
+    <div class="main-content">
+      <div class="panel">
+        <h3>Ranked Player Cards</h3>
+        <div id="cardGrid" class="card-grid"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
