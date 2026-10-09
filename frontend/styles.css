@@ -1,0 +1,151 @@
+:root {
+  --gold-bg: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
+  --gold-text: #3d2b00;
+  --card-width: 220px;
+  --card-height: 340px;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #1d3557;
+  color: #fff;
+  padding: 16px 24px;
+}
+
+header h1 { margin: 0; font-size: 22px; }
+header p { margin: 4px 0 0; font-size: 13px; opacity: 0.8; }
+
+.banner {
+  background: #fff3cd;
+  color: #856404;
+  padding: 10px 24px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.wrap {
+  display: flex;
+  gap: 20px;
+  padding: 24px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.panel {
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.sidebar { width: 280px; flex-shrink: 0; }
+.main-content { flex-grow: 1; }
+
+.filter-group { margin-bottom: 14px; font-size: 13px; }
+.filter-group input[type="text"], .filter-group input[type="number"] {
+  width: 100%;
+  padding: 6px;
+  background: #2a2a2a;
+  border: 1px solid #444;
+  color: #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 4px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--card-width), 1fr));
+  gap: 24px;
+  margin-top: 10px;
+}
+
+/* FIFA Card Styling */
+.fifa-card {
+  width: var(--card-width);
+  height: var(--card-height);
+  background: var(--gold-bg);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  position: relative;
+  color: var(--gold-text);
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fifa-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(191,149,63,0.4);
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.1;
+}
+
+.card-rating {
+  font-size: 34px;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+.card-position {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card-body {
+  text-align: center;
+  margin-top: -24px;
+}
+
+.player-name {
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-bottom: 2px solid rgba(61,43,0,0.2);
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+}
+
+.attributes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: left;
+  padding: 0 8px;
+}
+
+.attr-item span {
+  float: right;
+  font-weight: 900;
+}
+
+.card-footer {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
