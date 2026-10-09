@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "mode": "descriptive",
+    "mode_message": "D2-TF Scouting Telemetry active. Showing baseline prospect and historical evaluations.",
+    "score_label": "Score represents dual-duels recovery efficiency scaled for evaluation."
+  },
+  "players": [
+    {
+      "nfl_id": 1001,
+      "name": "Marcus Vance",
+      "position": "EDGE",
+      "pos_group": "trench",
+      "draft_class": 2027,
+      "college": "State University",
+      "kind": "prospect",
+      "score_source": "descriptive",
+      "pred_rr": 0.88,
+      "lo": 0.81,
+      "hi": 0.95,
+      "high_prob": null,
+      "pos_rank": 1,
+      "pos_n": 12,
+      "coverage": 0.90,
+      "confidence": "high",
+      "coverage_detail": { "combine drills": true, "in-game duels": true, "measurements": true, "historical outcomes": false },
+      "strengths": ["High deficit elimination velocity", "Consistent recovery angle"],
+      "weaknesses": [],
+      "duel_metrics": { "shrunk recovery rate": 0.85, "deficit elimination velocity": 0.72 },
+      "movement": {},
+      "combine": { "40-yd (s)": 4.62, "3-cone (s)": 7.10, "shuttle (s)": 4.30 },
+      "outcome": null,
+      "export": {}
+    }
+  ],
+  "map": [
+    { "id": 1001, "name": "Marcus Vance", "position": "EDGE", "kind": "prospect", "x": 0.5, "y": 1.2, "score": 0.88 }
+  ]
+}
