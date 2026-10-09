@@ -1,0 +1,17 @@
+{
+    "latent_policy_preservation": 0.9702265560626984,
+    "preservation_ci95": [
+        0.9692602843046189,
+        0.9712967492640019
+    ],
+    "reactive_recovery_rate_pooled": 0.875968992248062,
+    "reactive_recovery_events": {
+        "recovered": 678,
+        "compromised": 774
+    },
+    "deficit_elimination_velocity": 0.031665312072109555,
+    "CTI": 71.05124257479558,
+    "combine_frames": 270945,
+    "game_duel_frames": 200360,
+    "athletes": 230
+}

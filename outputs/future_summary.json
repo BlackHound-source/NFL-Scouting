@@ -1,0 +1,62 @@
+{
+  "split_week": 9,
+  "min_late_events": 3,
+  "noise_ceiling_R2": 0.23991144883006488,
+  "models": [
+    {
+      "n": 38,
+      "R2": -0.010700637394018386,
+      "spearman": -0.28914079086596495,
+      "spearman_ci_low": -0.5843674055576753,
+      "spearman_ci_high": 0.02305644563951617,
+      "MAE": 0.14075529412102855,
+      "top_quintile_lift": 1.060299881341915,
+      "model": "persistence (early shrunk RR)",
+      "ceiling_R2": 0.23991144883006488
+    },
+    {
+      "n": 38,
+      "R2": 0.11169076068274297,
+      "spearman": 0.4345531103988068,
+      "spearman_ci_low": 0.11375541067027171,
+      "spearman_ci_high": 0.6867858548536244,
+      "MAE": 0.12488697103363704,
+      "top_quintile_lift": 1.0930926611772318,
+      "model": "in-game only (ridge)",
+      "ceiling_R2": 0.23991144883006488
+    },
+    {
+      "n": 31,
+      "R2": -0.12503657464077533,
+      "spearman": -0.31216332792947954,
+      "spearman_ci_low": -0.6085284087231823,
+      "spearman_ci_high": 0.07858581135095451,
+      "MAE": 0.15873513938468642,
+      "top_quintile_lift": 0.8364466583644666,
+      "model": "combine only (ridge)",
+      "ceiling_R2": 0.23991144883006488
+    },
+    {
+      "n": 31,
+      "R2": -0.051613430185551534,
+      "spearman": 0.1266781776937619,
+      "spearman_ci_low": -0.22601762705662756,
+      "spearman_ci_high": 0.461147902768337,
+      "MAE": 0.1518294133531509,
+      "top_quintile_lift": 1.0938148609381484,
+      "model": "combine + in-game (ridge)",
+      "ceiling_R2": 0.23991144883006488
+    },
+    {
+      "n": 31,
+      "R2": -0.10958312069112153,
+      "spearman": -0.7368557875275887,
+      "spearman_ci_low": -0.8869588250502919,
+      "spearman_ci_high": -0.48162674161076635,
+      "MAE": 0.1598252688172043,
+      "top_quintile_lift": 0.6112494811124949,
+      "model": "combine + in-game (GBM)",
+      "ceiling_R2": 0.23991144883006488
+    }
+  ]
+}
